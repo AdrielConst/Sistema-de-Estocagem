@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*CONFS PRINCIPAIS DO SITE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;}
+
+body {
+    background-color: #121212;}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #121212;}
+
+.circle {
+    position: absolute;
+    clip-path: circle(50% at bottom right); 
+    width: 100%;
+    height: 100%;
+    background-color: #f5cb5c;}
+    
+/*CONTAINER DE CADASTRO*/
+.container-principal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.container-cd {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 680px;
+    height: 510px;
+    background-color: #f5cb5c;
+    border-radius: 20px;}
+
+.container-cd p {
+    margin-top: 15px;
+    margin-bottom: 20px;}
+
+.container-cd h2 {
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;}
+
+.container-cd input {
+    width: 590px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;}
+
+.container-cd button {
+    width: 590px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #121212;
+    color: white;}
+
+.container-cd button:hover {
+    background-color: #c8b8db;
+    color: #121212;}
+
+.container-cd .back {
+    color: #000000;}
+
+.container-cd .back a {
+    text-decoration: none;
+    color: #000000;}
+
+.container-cd .back a:hover {
+    color: #ffffff;}
+
+/*ICONES DENTRO DO CADASTRO*/
+.ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 55px;}
+
+.ico li {
+    list-style: none;}
+
+.ico li a {
+    display: inline-block;
+    margin-left: 45px;
+    background: #1c1b1b;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition:  0.3s ease-in-out;}
+
+.ico li a:hover {
+    background: #374724;
+    transform: translateY(-5px);
+    filter: invert(1);
+    -webkit-box-shadow: 3px -3px 35px -5px rgb(0, 0, 0);
+    -moz-box-shadow: 3px -3px 35px -5px rgb(0, 0, 0);
+    box-shadow: 3px -3px 35px -5px rgb(0, 0, 0);}
+
+.ico li a img {
+    filter: invert(1);
+    transform: scale(0.5);}
+

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*CONF GERAL DO SITE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;}
+
+body {
+    background: #121212;
+    color: #fff;}
+
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: center;
+    overflow: hidden;}
+
+.circle {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 30%;
+    background: #e9b831;
+    clip-path: circle(50% at bottom left); 
+    z-index: -2;}
+
+.container {
+    position: relative;
+    left: -160px;
+    background: inherit;}
+
+/*IMAGENS DO SITE*/
+.container-img {
+    display: block;
+    width: 80%;
+    height: 80%;}
+
+.img-login {
+    display: flex;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 27%;
+    right: 27%;
+    z-index: -1;}
+
+/*CONTAINER DE LOGIN*/
+.login {
+    background: #f5cb5c;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center; 
+    width: 400px;
+    height: 520px;
+    z-index: 2;
+    /* Se quiser afastar da borda esquerda, adicione: */
+    margin-left: 60px;
+}
+
+.login h2 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 25px;}
+
+.login input {
+    width: 300px;
+    height: 70px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    z-index: 3;}
+
+.login button {
+    padding: 10px 20px;
+    background: #121212;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 70px;
+    cursor: pointer;
+    font-size: 16px;}
+
+.login button:hover {
+    background: #c8b8db;
+    color: #121212;}
+
+.login p {
+    margin-top: 20px;
+    color: #000000;}
+
+.login p a {
+    color: #746b80;
+    text-decoration: none;
+    transition: color 0.3s;}
+
+.login p a:hover {
+    color: #5f5e5e;}
+
+/*FRASE DO SITE*/
+.frase {
+    position: absolute;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    z-index: 1;
+    left: 5%;
+    top: 40px;}
+
+.frase a {
+    text-decoration: none;
+    font-weight: 500;}
+    
+.frase h2 {
+    color: #c8b8db;
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    line-height: 1.4em;
+    font-weight: 700;}
+
+.frase span {
+    font-size: 1.8em;
+    color: #f5cb5c;
+    font-weight: 700;}
+
+.frase p {
+    font-size: 0.4em;
+    line-height: 1.4em;}
+
+.frase-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c8b8db;
+    border-radius: 40px;
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+    -webkit-box-shadow: -3px 3px 35px -5px rgba(200,184,219,1);
+    -moz-box-shadow: -3px 3px 35px -5px rgba(200,184,219,1);
+    box-shadow: -3px 3px 35px -5px rgba(200,184,219,1);}
+
+.frase-btn:hover {
+    transform: translateY(-10px);}
+
+.frase-btn a {
+    text-decoration: none;
+    color: #121212;}
+
+/*ICONS DO SITE*/
+.ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    padding-right: 35px;}
+
+.ico li {
+    list-style: none;}
+
+.ico li a {
+    display: inline-block;
+    margin-left: 45px;
+    background: #1c1b1b;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition:  0.3s ease-in-out;}
+
+.ico li a:hover {
+    background: #374724;
+    transform: translateY(-5px);
+    filter: invert(1);
+    -webkit-box-shadow: 3px -3px 35px -5px rgb(0, 0, 0);
+    -moz-box-shadow: 3px -3px 35px -5px rgb(0, 0, 0);
+    box-shadow: 3px -3px 35px -5px rgb(0, 0, 0);}
+
+.ico li a img {
+    filter: invert(1);
+    transform: scale(0.5);}
+
+
+    
